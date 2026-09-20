@@ -1,8 +1,8 @@
---[==[ M4teoHub UI Library - Protected & Obfuscated ]==]--
+--[==[ M4teoHub UI Library - Protected & Fixed ]==]--
 local _0x01 = getgenv and getgenv() or _G
 local _0x02 = game
 local _0x03 = _0x02.GetService
-local _0x04 = _0x03(_0x02, "\084\119\101\101\110\83\101\114\118\105\99\101")
+local _0x04 = _0x03(_0x02, "\084\119\101\110\83\101\114\118\105\99\101")
 local _0x05 = _0x03(_0x02, "\85\115\101\114\73\110\112\117\116\83\101\114\118\105\99\101")
 local _0x06 = _0x03(_0x02, "\67\111\114\101\71\117\105")
 local _0x07 = _0x03(_0x02, "\80\108\97\121\101\114\115")
@@ -232,7 +232,7 @@ function _0x09:CrearWindow(_0x0a)
 
         _0x29.MouseButton1Click:Connect(function()
             if _0x27.Text == _0x0e then
-                _0x29.Text = "\161\67\111\114\114\101\99\116\111\33"
+                _0x29.Text = "\161\67\111\114\114\101\99\116\110\33"
                 _0x29.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
                 task.wait(0.4)
                 _0x04:Create(_0x22, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
@@ -415,7 +415,7 @@ function _0x09:CrearWindow(_0x0a)
             local function _0x49(_0x1d)
                 local _0x4a = math.clamp((_0x1d.Position.X - _0x44.AbsolutePosition.X) / _0x44.AbsoluteSize.X, 0, 1)
                 _0x04:Create(_0x46, TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(_0x4a, 0, 1, 0)}):Play()
-                local _0x4b = math.floor(_0x3f + (($(_0x40 - _0x3f) * _0x4a))) -- Safe calculation
+                local _0x4b = math.floor(_0x3f + ((_0x40 - _0x3f) * _0x4a))
                 _0x43.Text = _0x36 .. "\58\32" .. _0x4b
                 pcall(_0x38, _0x4b)
             end
